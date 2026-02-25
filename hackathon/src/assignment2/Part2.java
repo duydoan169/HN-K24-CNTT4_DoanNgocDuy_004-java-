@@ -22,12 +22,11 @@ public class Part2 {
         int max = arr[0];
         int max2nd = -99999;
         for (int i = 0; i < n; i++) {
-            if(arr[i] >= max){
+            if (arr[i] > max) {
+                max2nd = max;
                 max = arr[i];
-            }else{
-                if (arr[i] > max2nd){
-                    max2nd = arr[i];
-                }
+            } else if (arr[i] < max && arr[i] > max2nd) {
+                max2nd = arr[i];
             }
         }
 
