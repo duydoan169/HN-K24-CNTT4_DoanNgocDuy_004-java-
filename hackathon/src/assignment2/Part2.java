@@ -20,7 +20,7 @@ public class Part2 {
             arr[i] = sc.nextInt(); sc.nextLine();
         }
         int max = arr[0];
-        int max2nd = arr[0];
+        int max2nd = -99999;
         for (int i = 0; i < n; i++) {
             if(arr[i] >= max){
                 max = arr[i];
